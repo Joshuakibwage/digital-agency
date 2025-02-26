@@ -1,6 +1,10 @@
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoIosClose } from "react-icons/io";
 import Logo from "../../assets/website/logoDark.svg";
 import Button from "../Button";
 import DarkMode from "./DarkMode";
+import { useState } from "react";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 
 const menuLinks = [
@@ -23,6 +27,14 @@ const menuLinks = [
 ]
 
 const Navbar = () => {
+
+    const [nav, setNav] = useState(false);
+    
+    const toggleNav = () => {
+        setNav(!nav);
+    }
+    
+
   return (
     <nav className="bg-white dark:bg-slate-950 dark:text-white duration-300 transition-all ease-in-out
     delay-200">
@@ -64,13 +76,32 @@ const Navbar = () => {
                             transition-colors cursor-pointer delay-200 ease-in-out px-4 py-2 rounded-lg
                             active:ring-1"
                         />
-                        <DarkMode 
                         
-                        />
                     </ul>
+                </div>
+                <div className="flex items-center gap-8">
+                    <DarkMode />
+                    <button onClick={toggleNav} className="block md:hidden cursor-pointer">
+                        {
+                            nav ? (
+                                    <IoIosClose 
+                                    size={30}
+                                        className="dark:text-white"
+                                    /> 
+                                ) : (
+                                    <HiMenuAlt3 
+                                        className="text-3xl dark:text-white"
+                                    />
+                                )
+                        }
+                    </button>
                 </div>
             </div>
         </div>
+        {/* mobile nav links */}
+        <ResponsiveMenu 
+            nav={nav}
+        />
     </nav>
   )
 }
