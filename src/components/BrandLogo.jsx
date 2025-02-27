@@ -6,8 +6,9 @@ import Brand5 from "../assets/brands/5.svg"
 
 const BrandLogo = () => {
   return (
-    <section className="container mx-auto py-12">
-        <h1 className="text-center font-semibold">Powering next-gen companies</h1>
+    <section className=" bg-gray-900">
+      <section className="container mx-auto py-12">
+        <h1 className="text-center font-semibold text-lg text-gray-300">Powering next-gen companies</h1>
 
         <div className="flex flex-wrap justify-evenly items-center gap-4 py-6 md:px-32">
             <img src={Brand1} alt="brand1" />
@@ -16,6 +17,7 @@ const BrandLogo = () => {
             <img src={Brand4} alt="brand1" />
             <img src={Brand5} alt="brand1" />
         </div>
+    </section>
     </section>
   )
 }

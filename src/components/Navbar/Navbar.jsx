@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-slate-950 dark:text-white duration-300 transition-all ease-in-out
     delay-200">
         <div className="px-5 md:container mx-auto">
-            <div className="flex py-3 justify-between">
+            <div className="flex py-3 ">
                 {/* logo section */}
                 <div className="flex items-center gap-2">
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </div>
 
                 {/*Desktop  navigation links section */}
-                <div className="hidden md:block">
+                <div className="hidden md:flex md:ml-auto">
                     <ul className="flex items-center gap-8">
                         {
                             menuLinks.map((link, idx) => (
@@ -79,9 +79,9 @@ const Navbar = () => {
                         
                     </ul>
                 </div>
-                <div className="flex items-center gap-8">
+                <div className="flex items-center ml-4">
                     <DarkMode />
-                    <button onClick={toggleNav} className="block md:hidden cursor-pointer">
+                    <button onClick={toggleNav} className="block md:hidden cursor-pointer ">
                         {
                             nav ? (
                                     <IoIosClose 

@@ -14,7 +14,7 @@ const Hero = () => {
                         className=""
                     />
                     <div className="bg-white dark:bg-gray-950 px-4 py-2 shadow-md rounded-xl absolute 
-                    -bottom-5 -right shadow-gray-700">
+                    -bottom-5 -right-8 shadow-gray-700">
                         <p>
                         ⭐ Projects
                         </p>
