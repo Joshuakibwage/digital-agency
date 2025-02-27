@@ -2,7 +2,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
 import Logo from "../../assets/website/logoDark.svg";
 import Button from "../Button";
-import DarkMode from "./DarkMode";
+// import DarkMode from "./DarkMode";
 import { useState } from "react";
 import ResponsiveMenu from "./ResponsiveMenu";
 
@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-slate-950 dark:text-white duration-300 transition-all ease-in-out
     delay-200">
         <div className="px-5 md:container mx-auto">
-            <div className="flex py-3 ">
+            <div className="flex justify-between py-3 ">
                 {/* logo section */}
                 <div className="flex items-center gap-2">
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center ml-4">
-                    <DarkMode />
+                    {/* <DarkMode /> */}
                     <button onClick={toggleNav} className="block md:hidden cursor-pointer ">
                         {
                             nav ? (
