@@ -40,8 +40,8 @@ const Hero = () => {
 
                     <Button 
                         label="Get Started" 
-                        className="bg-primary text-white hover:bg-primary/80 duration-300  rounded-lg
-                        transition-colors cursor-pointer delay-200 ease-in-out px-4 py-2  active:ring-1"   
+                        className="hover:bg-primary/80 duration-300  rounded-lg
+                        transition-colors cursor-pointer delay-200 ease-in-out px-4 py-2  active:ring-1bg-primary text-white "   
                     />
                 </div>
             </div>
