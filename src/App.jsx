@@ -4,6 +4,7 @@ import BrandLogo from "./components/BrandLogo";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Blogs from "./components/Blogs";
+import Footer from "./components/Footer";
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <Testimonials />
       <Blogs />
+      <Footer />
     </div>
   );
 }
