@@ -15,3 +15,7 @@ body {
 .dark {
   @apply bg-black text-white
 }
+
+htm {
+  scroll-behavior: smooth;
+}
